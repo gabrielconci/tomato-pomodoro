@@ -1,10 +1,18 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tomato Pomodoro</title>
+    <script>
+      // Aplica o tema salvo antes da página aparecer, para não piscar o tema errado.
+      try {
+        if (localStorage.getItem('pomodoro:v1:theme') === 'light') {
+          document.documentElement.classList.remove('dark')
+        }
+      } catch {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

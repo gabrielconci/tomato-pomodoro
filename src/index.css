@@ -1,6 +1,18 @@
 /* Carrega o Tailwind inteiro. As classes usadas nos componentes viram CSS no build. */
 @import "tailwindcss";
 
+/*
+  Por padrão, o `dark:` do Tailwind segue o tema do sistema.
+  Esta linha faz o `dark:` valer quando a tag <html> tiver a classe "dark",
+  o que permite trocar o tema com um botão.
+*/
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
   font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Deixa barras de rolagem e campos nativos do navegador no tema certo. */
+html.dark {
+  color-scheme: dark;
 }

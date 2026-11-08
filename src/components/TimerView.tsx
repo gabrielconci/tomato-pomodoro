@@ -27,7 +27,7 @@ export function TimerView({ timer, cyclesUntilLongBreak, sessionName, onRename, 
     <section className="flex flex-col items-center gap-6">
       <div className="w-full max-w-sm text-center">
         <p className="mb-1 text-xs font-medium tracking-wide text-slate-500 uppercase">Sessão</p>
-        <EditableText value={sessionName} onSave={onRename} placeholder="Dê um nome (ex.: Estudar TS)" className="text-lg font-semibold" />
+        <EditableText value={sessionName} onSave={onRename} placeholder="Dê um nome (ex.: Estudar Roma Antiga)" className="text-lg font-semibold" />
       </div>
 
       {/* Abas de fase */}
