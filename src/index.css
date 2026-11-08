@@ -1,0 +1,6 @@
+/* Carrega o Tailwind inteiro. As classes usadas nos componentes viram CSS no build. */
+@import "tailwindcss";
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
